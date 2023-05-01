@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/bean")
 public class MainInjection {
+
     private final MyBean myBean;
 
     public MainInjection(MyBean myBean) {

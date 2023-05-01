@@ -7,7 +7,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class MainService {
     public String getHello() {
-        log.info("getHello Method Start Boot");
+        log.info("getHello Method Start BOOT");
         return "<h1>Hello World! By Boot</h1>";
+    }
+
+    public String printParam(Object param) {
+        log.info("printParam Request by BOOT");
+        return "<h1>" + param + " REQUEST by BOOT" + "</h1>";
     }
 }
